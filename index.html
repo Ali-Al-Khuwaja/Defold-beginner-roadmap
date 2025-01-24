@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A road-map for learning Defold</title>
+  <link rel="stylesheet" href="css/markdown.css">
+  <meta charset="utf-8">
+  <style>
+    :root {
+      --text-colour: #504e55;
+    }
+    @media screen {
+      body {
+        font-size: 13pt;
+        max-width: 800px;
+        font-family: Sans, sans-serif;
+        padding-top: 1px;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-colour: #c0bfbc;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>A road-map for learning Defold</h1>
+<hr />
+<h2>Introduction</h2>
+<h3>What is Defold ?</h3>
+<p>Defold is a 3D game engine with focus on 2D, it's <strong>completely free</strong> to use and <strong>truly cross-platform</strong> engine.
+There are <a href="https://defold.com/license/">no licensing</a> fees and no royalties.
+The source code is available on GitHub.
+Defold is known for its ease of use and it is praised for its technical documentation and friendly community of developers.</p>
+<p>For more information <a href="https://defold.com/about/">click here.</a></p>
+<h3>What makes Defold special ?</h3>
+<p>it's visual editor, drag-and-drop functionality, and beginner-friendly scripting language.</p>
+<p>more info <a href="https://defold.com/product/">here</a>.</p>
+<h3>Who is this <s>book</s> road-map for ?</h3>
+<p>This <s>book</s>road-map is for complete beginners who may have no programming or game development experience and want to learn Defold.</p>
+<h3>How to use this <s>book</s> road-map ?</h3>
+<p>The <s>book</s> road-map has chapters that build on each other,we will make some mini-projects and finish it with a final game.</p>
+<p>The <s>book</s> road-map is written by a single person who is also learning just like you and the primary goal is to achieve the Minimum Viable Product (MVP) first, and then focus on refining it, so throughout the whole <s>book</s> road-map you will be given links to some lesson to read because it's already exits.</p>
+<h3>Setting up your workspace:</h3>
+<p>let's start setting up your workspace, first you should <a href="https://defold.com/manuals/install/">install Defold</a> if you haven't done it already, then read this introduction to <a href="https://defold.com/manuals/editor/">Defolds editor</a>.</p>
+<hr />
+<h2><strong>Part 1: The Building Blocks of Defold</strong></h2>
+<h3><strong>Chapter 1: Game Objects and Components</strong></h3>
+<ul>
+<li>Introduction to Game Objects: The &quot;containers&quot; of Defold.  links: <a href="https://defold.com/manuals/building-blocks/">building-blocks</a></li>
+<li>Understanding Components: Sprites, Colliders, Scripts, etc.  links: <a href="https://defold.com/manuals/components/">components</a> , <a href="https://defold.com/manuals/sprite/">sprites</a> <a href="https://defold.com/manuals/physics/">colliders</a> <a href="https://defold.com/manuals/script/">scripts</a></li>
+<li>Hands-on: Create a Game Object, attach a sprite, and position it on the screen.</li>
+<li><strong>Mini-Project:</strong> Make a moving square with a script.</li>
+</ul>
+<h3><strong>Chapter 2: Collections and Hierarchies</strong></h3>
+<ul>
+<li>Organizing your game with Collections.</li>
+<li>Creating Parent-Child relationships in the hierarchy.</li>
+<li>Using Collections for scene management.</li>
+<li><strong>Mini-Project:</strong> Build a simple layered scene (background, character, interactive object).</li>
+</ul>
+<h3><strong>Chapter 3: Lua Scripting Basics</strong></h3>
+<ul>
+<li>Introduction to Lua: Variables, loops, conditionals, and functions.</li>
+<li>Connecting scripts to Game Objects.</li>
+<li>Debugging basics with <code>print()</code>.</li>
+<li><strong>Mini-Project:</strong> Move the square with arrow keys.</li>
+</ul>
+<h3><strong>Chapter 4: Messaging and Defold's API</strong></h3>
+<ul>
+<li>Introduction to Defold's messaging system (<code>msg.post()</code>, <code>go.get()</code>, etc.).</li>
+<li>Modifying object properties through scripts.</li>
+<li><strong>Mini-Project:</strong> Make an object react to clicks and change color.</li>
+</ul>
+<hr />
+<h2><strong>Part 2: Making It Interactive</strong></h2>
+<h3><strong>Chapter 5: Graphics and Animation</strong></h3>
+<ul>
+<li>Adding and managing sprites.</li>
+<li>Creating flipbook animations.</li>
+<li>Importing and organizing assets.</li>
+<li><strong>Mini-Project:</strong> Animate a character sprite.</li>
+</ul>
+<h3><strong>Chapter 6: Physics and Collisions</strong></h3>
+<ul>
+<li>Basics of Defold's 2D physics system.</li>
+<li>Adding collision objects (static, dynamic, kinematic).</li>
+<li>Handling collision events.</li>
+<li><strong>Mini-Project:</strong> Create a bouncing ball with obstacles.</li>
+</ul>
+<h3><strong>Chapter 7: User Input</strong></h3>
+<ul>
+<li>Setting up input bindings for keyboard, mouse, and touch.</li>
+<li>Detecting and responding to input events.</li>
+<li><strong>Mini-Project:</strong> Implement basic controls for a player character.</li>
+</ul>
+<h3><strong>Chapter 8: User Interfaces</strong></h3>
+<ul>
+<li>Creating GUIs with Defold's UI system.</li>
+<li>Adding buttons, labels, and progress bars.</li>
+<li>Handling user input in the UI.</li>
+<li><strong>Mini-Project:</strong> Create a simple menu with a Start and Quit button.</li>
+</ul>
+<h3><strong>Chapter 9: Sound and Music</strong></h3>
+<ul>
+<li>Importing and using sound files.</li>
+<li>Playing, pausing, and stopping sounds.</li>
+<li><strong>Mini-Project:</strong> Add sound effects and background music to a game scene.</li>
+</ul>
+<hr />
+<h2><strong>Part 3: Build Your First Game</strong></h2>
+<h3><strong>Chapter 10: Building a Complete Game</strong></h3>
+<ul>
+<li><strong>Genre Options:</strong> Choose one—platformer, endless runner, or top-down shooter.</li>
+<li>Designing levels with Collections and Tilemaps.</li>
+<li>Scripting game mechanics (movement, collisions, scorekeeping).</li>
+<li><strong>Hands-On:</strong> Guide the reader step-by-step to complete the game.</li>
+</ul>
+<h3><strong>Chapter 11: Polishing and Testing</strong></h3>
+<ul>
+<li>Debugging and performance optimization.</li>
+<li>Adding polish: animations, particles, and sound cues.</li>
+<li>Playtesting for balance and fun.</li>
+</ul>
+<h3><strong>Chapter 12: Publishing Your Game</strong></h3>
+<ul>
+<li>Building for different platforms (HTML5, desktop, mobile).</li>
+<li>Exporting and sharing your game.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,223 @@
+:root {
+  --background-colour: #fcfcfc;
+  --blue-4: #1c71d8;
+  --dark-1: #77767b;
+  --dark-4: #3d3846;
+  --dark-6: #000000;
+  --light-4: #deddda;
+  --yellow-4: #f5c211;
+}
+
+body {
+  margin: 0.625em auto;
+  line-height: 1.5;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+}
+
+@media print {
+    body {
+      font-family: "DejaVu Serif", Georgia, "Times New Roman", serif;
+      font-size: 10pt;
+    }
+
+	h1, h2, h3, h4, h5, h6 {
+      break-inside: avoid;
+	}
+
+    hr {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    a {
+      color: var(--dark-1);
+      text-decoration: underline;
+      font-family: monospace, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+      font-size: 9pt;
+    }
+}
+
+@media (max-width:600px) {
+  body {
+    padding: 0 1em;
+  }
+}
+
+code {
+  color: var(--dark-4);
+}
+
+blockquote {
+  padding-left: 1em;
+  margin-left: 0.5em;
+  line-height: 1.9em;
+}
+
+pre {
+  padding: 0.5em 0.8em;
+  border-radius: 0.25em;
+  overflow-x: auto;
+}
+
+a {
+  word-wrap: break-word;
+}
+
+@media screen {
+  a {
+    text-decoration: none;
+    color: var(--blue-4);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  code {
+    background-color: var(--light-4);
+  }
+
+  blockquote {
+    border-left: 8px solid var(--light-4);
+  }
+
+  pre {
+      background-color: var(--light-4);
+  }
+}
+
+p code, div code, li code {
+  padding: 0.2em;
+  border-radius: 0.25em;
+}
+
+blockquote p {
+  font-style: italic;
+  color: var(--dark-4);
+}
+
+ul.contains-task-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+ul.contains-task-list > li > ul > li {
+  padding-left: 30px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 0.4em;
+  margin-bottom: 0.45em;
+}
+
+/* Selectors are: Any text immediately within the div, elements within the div (codespan, link), the checkbox itself */
+li:has(> input[type="checkbox"]:checked) > div, li:has(> input[type="checkbox"]:checked) > div *, li > input[type="checkbox"]:checked {
+  color: var(--dark-1);
+  text-decoration: line-through;
+}
+
+li:has(> input[type="checkbox"]:checked) > div > a {
+  text-decoration: line-through underline;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.25em;
+  height: 1.25em;
+  border: 0.13em solid currentColor;
+  border-radius: 0.3em;
+  transform: translateY(0.075em);
+  display: inline-grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--background-colour);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked {
+  background-color: currentColor;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: rotate(12deg) scale(1) translateY(-0.1em) translateX(-0.1em)
+}
+
+table {
+  width: calc(100% - 50px);
+  table-layout: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px var(--light-4);
+}
+
+table td, table th {
+  padding: 0.35em 0.5em;
+  text-align: left;
+  border: 1px solid var(--light-4);
+}
+
+table th {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-colour: #1e1e1e;
+    --blue-2: #62a0ea;
+    --dark-2: #5e5c64;
+    --dark-4-mono: #464646;
+    --light-3: #f6f5f4;
+    --yellow-1: #f9f06b;
+  }
+
+  code {
+    color: var(--light-3);
+    background-color: var(--dark-4-mono);
+  }
+
+  pre {
+    background-color: var(--dark-4-mono);
+  }
+
+  blockquote {
+    border-left: 8px solid var(--dark-2);
+  }
+
+  blockquote p {
+    color: var(--light-3);
+  }
+
+  a {
+    color: var(--blue-2);
+  }
+
+  table {
+    box-shadow: 0 0 0 1px var(--dark-4-mono);
+  }
+
+  table td, table th {
+    border: 1px solid var(--dark-4-mono);
+  }
+}
