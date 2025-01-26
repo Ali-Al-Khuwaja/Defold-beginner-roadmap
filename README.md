@@ -1,124 +1,63 @@
-# A road-map for learning Defold
+Here's a roadmap for learning Defold, tailored for beginners:
 
----
+**Phase 1: Foundations (1-2 weeks)**
 
-## Introduction
+  * **Install Defold:** Download and install the Defold editor from the official website ([https://defold.com/](https://www.google.com/url?sa=E&source=gmail&q=https://defold.com/)).
+  * **Editor Basics:**
+      * Familiarize yourself with the [editor interface](https://defold.com/manuals/editor/): project view, scene editor, properties panel, console.  
+      * Learn about [game objects, components](https://defold.com/manuals/building-blocks/) (sprites, collision objects, scripts, etc.), and collections.
+      * Understand the concept of parent-child relationships between game objects.
+  * **Simple Project:**
+      * Create a new project.
+      * Add a sprite component to a game object and display an image.
+      * Learn how to move the game object using the editor's transform tools.
+  * **Official Tutorials:** Work through the [official Defold tutorials](https://defold.com/tutorials/) on their website. These are a great starting point and cover the basics effectively.
 
-### What is Defold ?
+**Phase 2: Scripting and Game Logic (2-4 weeks)**
 
-Defold is a 3D game engine with focus on 2D, it's **completely free** to use and **truly cross-platform** engine.
-There are [no licensing](https://defold.com/license/) fees and no royalties.
-The source code is available on GitHub.
-Defold is known for its ease of use and it is praised for its technical documentation and friendly community of developers.
+  * **Lua Scripting Basics:**
+      * Learn the [basics of Lua syntax](https://defold.com/manuals/lua/): variables, data types, operators, control flow (if statements, loops), functions.
+      * Understand how to attach scripts to game objects and use the `init()`, `update()`, and `on_message()` functions.
+  * **Basic Game Mechanics:**
+      * Implement movement using keyboard or [mouse input](https://defold.com/manuals/input-mouse-and-touch/).
+      * Create simple collision detection between game objects.
+      * Implement basic game logic, such as scorekeeping or object destruction.
+  * **Example Projects:** Start with very simple game ideas:
+      * "Hello World" with interactive elements (e.g., a button that changes color when clicked).
+      * A simple "dodge the falling objects" game.
 
-For more information [click here.](https://defold.com/about/)
+**Phase 3: Intermediate Concepts (4-6 weeks)**
 
-### What makes Defold special ?
+  * **Collections and Factories:**
+      * Learn how to use collections to organize your game objects.
+      * Understand how to use [factories](https://defold.com/manuals/collection-factory/) to create instances of game objects at runtime.
+  * **Animation:**
+      * Learn how to create and use sprite [animations](https://defold.com/manuals/animation/).
+      * Implement animation based on game events (e.g., walking animation when moving).
+  * **User Interface (UI):**
+      * Learn how to create and manage [UI elements](https://defold.com/manuals/gui/) (buttons, text, images).
+      * Implement basic UI interactions.
+  * **Sound and Music:**
+      * Learn how to [add sound effects](https://defold.com/manuals/sound/) and background music to your game.
+  * **More Complex Projects:**
+      * A simple platformer with basic movement, jumping, and collision.
+      * A top-down shooter with basic enemy AI.
 
-it's visual editor, drag-and-drop functionality, and beginner-friendly scripting language.
+**Phase 4: Advanced Topics and Polish (Ongoing)**
 
-more info [here](https://defold.com/product/).
+  * **Physics:** Dive deeper into the [physics](https://defold.com/manuals/physics/) engine for more realistic movement and interactions.
+  * **Advanced Scripting:** Learn more advanced Lua techniques, such as object-oriented programming.
+  * **Shaders:** [Explore shaders](https://defold.com/manuals/shader/) to create visual effects.
+  * **Networking:** If you're interested in multiplayer games, learn [about networking ](https://defold.com/manuals/networking/)concepts and Defold's networking capabilities.
+  * **Optimization:** Learn how to [optimize your game](https://defold.com/manuals/optimization/) for performance.
+  * **Publishing:** Learn how to build and publish your game to different platforms.
+  * **Community and Resources:**
+      * Engage with the Defold community on the forum and Discord.
+      * Explore community-created extensions and libraries.
+      * Continue learning through tutorials, documentation, and example projects.
 
-### Who is this ~~book~~ road-map for ?
+**Key Tips for Learning Defold:**
 
-This ~~book~~road-map is for complete beginners who may have no programming or game development experience and want to learn Defold.
-
-### How to use this ~~book~~ road-map ?
-
-The ~~book~~ road-map has chapters that build on each other,we will make some mini-projects and finish it with a final game.
-
-The ~~book~~ road-map is written by a single person who is also learning just like you and the primary goal is to achieve the Minimum Viable Product (MVP) first, and then focus on refining it, so throughout the whole ~~book~~ road-map you will be given links to some lesson to read because it's already exits.
-
-### Setting up your workspace:
-
-let's start setting up your workspace, first you should [install Defold](https://defold.com/manuals/install/) if you haven't done it already, then read this introduction to [Defolds editor](https://defold.com/manuals/editor/).
-
----
-
-## **Part 1: The Building Blocks of Defold**
-
-### **Chapter 1: Game Objects and Components**
-
-- Introduction to Game Objects: The "containers" of Defold. links: [building-blocks](https://defold.com/manuals/building-blocks/)
-- Understanding Components: Sprites, Colliders, Scripts, etc. links: [components](https://defold.com/manuals/components/) , [sprites](https://defold.com/manuals/sprite/) [colliders](https://defold.com/manuals/physics/) [scripts](https://defold.com/manuals/script/)
-- Hands-on: Create a Game Object, attach a sprite, and position it on the screen.
-- **Mini-Project:** Make a moving square with a script.
-
-### **Chapter 2: Collections and Hierarchies**
-
-- Organizing your game with Collections.
-- Creating Parent-Child relationships in the hierarchy.
-- Using Collections for scene management.
-- **Mini-Project:** Build a simple layered scene (background, character, interactive object).
-
-### **Chapter 3: Lua Scripting Basics**
-
-- Introduction to Lua: Variables, loops, conditionals, and functions.
-- Connecting scripts to Game Objects.
-- Debugging basics with `print()`.
-- **Mini-Project:** Move the square with arrow keys.
-
-### **Chapter 4: Messaging and Defold's API**
-
-- Introduction to Defold's messaging system (`msg.post()`, `go.get()`, etc.).
-- Modifying object properties through scripts.
-- **Mini-Project:** Make an object react to clicks and change color.
-
----
-
-## **Part 2: Making It Interactive**
-
-### **Chapter 5: Graphics and Animation**
-
-- Adding and managing sprites.
-- Creating flipbook animations.
-- Importing and organizing assets.
-- **Mini-Project:** Animate a character sprite.
-
-### **Chapter 6: Physics and Collisions**
-
-- Basics of Defold's 2D physics system.
-- Adding collision objects (static, dynamic, kinematic).
-- Handling collision events.
-- **Mini-Project:** Create a bouncing ball with obstacles.
-
-### **Chapter 7: User Input**
-
-- Setting up input bindings for keyboard, mouse, and touch.
-- Detecting and responding to input events.
-- **Mini-Project:** Implement basic controls for a player character.
-
-### **Chapter 8: User Interfaces**
-
-- Creating GUIs with Defold's UI system.
-- Adding buttons, labels, and progress bars.
-- Handling user input in the UI.
-- **Mini-Project:** Create a simple menu with a Start and Quit button.
-
-### **Chapter 9: Sound and Music**
-
-- Importing and using sound files.
-- Playing, pausing, and stopping sounds.
-- **Mini-Project:** Add sound effects and background music to a game scene.
-
----
-
-## **Part 3: Build Your First Game**
-
-### **Chapter 10: Building a Complete Game**
-
-- **Genre Options:** Choose one—platformer, endless runner, or top-down shooter.
-- Designing levels with Collections and Tilemaps.
-- Scripting game mechanics (movement, collisions, scorekeeping).
-- **Hands-On:** Guide the reader step-by-step to complete the game.
-
-### **Chapter 11: Polishing and Testing**
-
-- Debugging and performance optimization.
-- Adding polish: animations, particles, and sound cues.
-- Playtesting for balance and fun.
-
-### **Chapter 12: Publishing Your Game**
-
-- Building for different platforms (HTML5, desktop, mobile).
-- Exporting and sharing your game.
+  * **Start small:** Don't try to create a complex game right away. Start with small, manageable projects and gradually increase the complexity.
+  * **Focus on understanding the fundamentals:** Make sure you have a solid understanding of the basic concepts before moving on to more advanced topics.
+  * **Don't be afraid to ask for help:** The Defold community is very helpful and welcoming to beginners.
