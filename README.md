@@ -1,23 +1,18 @@
 Here's a roadmap for learning Defold, tailored for beginners:
 
-**Phase 1: Foundations (1-2 weeks)**
+**Phase 1: Foundations**
 
   * **Install Defold:** Download and install the Defold editor from the official website ([https://defold.com/](https://www.google.com/url?sa=E&source=gmail&q=https://defold.com/)).
   * **Editor Basics:**
       * Familiarize yourself with the [editor interface](https://defold.com/manuals/editor/): project view, scene editor, properties panel, console.  
       * Learn about [game objects, components](https://defold.com/manuals/building-blocks/) (sprites, collision objects, scripts, etc.), and collections.
       * Understand the concept of parent-child relationships between game objects.
-  * **Simple Project:**
-      * Create a new project.
-      * Add a sprite component to a game object and display an image.
-      * Learn how to move the game object using the editor's transform tools.
-  * **Official Tutorials:** Work through the [official Defold tutorials](https://defold.com/tutorials/) on their website. These are a great starting point and cover the basics effectively.
 
-**Phase 2: Scripting and Game Logic (2-4 weeks)**
+**Phase 2: Scripting and Game Logic**
 
   * **Lua Scripting Basics:**
       * Learn the [basics of Lua syntax](https://defold.com/manuals/lua/): variables, data types, operators, control flow (if statements, loops), functions.
-      * Understand how to attach scripts to game objects and use the `init()`, `update()`, and `on_message()` functions.
+      * Understand how to attach [scripts](https://defold.com/manuals/script/) to game objects and use the `init()`, `update()`, and `on_message()` functions.
   * **Basic Game Mechanics:**
       * Implement movement using keyboard or [mouse input](https://defold.com/manuals/input-mouse-and-touch/).
       * Create simple collision detection between game objects.
@@ -26,7 +21,7 @@ Here's a roadmap for learning Defold, tailored for beginners:
       * "Hello World" with interactive elements (e.g., a button that changes color when clicked).
       * A simple "dodge the falling objects" game.
 
-**Phase 3: Intermediate Concepts (4-6 weeks)**
+**Phase 3: Intermediate Concepts**
 
   * **Collections and Factories:**
       * Learn how to use collections to organize your game objects.
@@ -61,3 +56,4 @@ Here's a roadmap for learning Defold, tailored for beginners:
   * **Start small:** Don't try to create a complex game right away. Start with small, manageable projects and gradually increase the complexity.
   * **Focus on understanding the fundamentals:** Make sure you have a solid understanding of the basic concepts before moving on to more advanced topics.
   * **Don't be afraid to ask for help:** The Defold community is very helpful and welcoming to beginners.
+  * **Official Tutorials:** Work through the [official Defold tutorials](https://defold.com/tutorials/) on their website. These are a great starting point and cover the basics effectively.
