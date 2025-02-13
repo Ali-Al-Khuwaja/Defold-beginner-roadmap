@@ -18,26 +18,33 @@ body {
 }
 
 @media print {
-    body {
-      font-family: "DejaVu Serif", Georgia, "Times New Roman", serif;
-      font-size: 10pt;
-    }
+  body {
+    font-family: "Ubuntu", sans-serif , serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10pt;
+  }
 
-	h1, h2, h3, h4, h5, h6 {
-      break-inside: avoid;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-inside: avoid;
+  }
 
-    hr {
-      width: 50%;
-      margin: 0 auto;
-    }
+  hr {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    a {
-      color: var(--dark-1);
-      text-decoration: underline;
-      font-family: monospace, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
-      font-size: 9pt;
-    }
+  a {
+    color: var(--dark-1);
+    text-decoration: underline;
+    font-family: monospace, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+    font-size: 9pt;
+  }
 }
 
 @media (max-width:600px) {
@@ -85,11 +92,13 @@ a {
   }
 
   pre {
-      background-color: var(--light-4);
+    background-color: var(--light-4);
   }
 }
 
-p code, div code, li code {
+p code,
+div code,
+li code {
   padding: 0.2em;
   border-radius: 0.25em;
 }
@@ -104,7 +113,7 @@ ul.contains-task-list {
   padding-inline-start: 0px;
 }
 
-ul.contains-task-list > li > ul > li {
+ul.contains-task-list>li>ul>li {
   padding-left: 30px;
 }
 
@@ -114,12 +123,14 @@ li input[type="checkbox"] {
 }
 
 /* Selectors are: Any text immediately within the div, elements within the div (codespan, link), the checkbox itself */
-li:has(> input[type="checkbox"]:checked) > div, li:has(> input[type="checkbox"]:checked) > div *, li > input[type="checkbox"]:checked {
+li:has(> input[type="checkbox"]:checked)>div,
+li:has(> input[type="checkbox"]:checked)>div *,
+li>input[type="checkbox"]:checked {
   color: var(--dark-1);
   text-decoration: line-through;
 }
 
-li:has(> input[type="checkbox"]:checked) > div > a {
+li:has(> input[type="checkbox"]:checked)>div>a {
   text-decoration: line-through underline;
 }
 
@@ -167,7 +178,8 @@ table {
   box-shadow: 0 0 0 1px var(--light-4);
 }
 
-table td, table th {
+table td,
+table th {
   padding: 0.35em 0.5em;
   text-align: left;
   border: 1px solid var(--light-4);
@@ -217,7 +229,8 @@ img {
     box-shadow: 0 0 0 1px var(--dark-4-mono);
   }
 
-  table td, table th {
+  table td,
+  table th {
     border: 1px solid var(--dark-4-mono);
   }
 }
