@@ -14,7 +14,7 @@ Here's a roadmap for learning Defold, made for beginners:
 - **Learn the four core concepts of Defold:**
   - Learn about [the building blocks of Defold](https://defold.com/manuals/building-blocks/), game objects, components and collections.
   - Learn about [Addressing](https://defold.com/manuals/addressing/), Code that controls a running game must be able to reach every object and component to manipulate what the player sees and hears, and Defold’s addressing mechanism makes this possible.
-  - Learn about Message passing, message passing is a mechanism for Defold game objects to communicate with each other.
+  - Learn about [message passing](https://defold.com/manuals/message-passing/), message passing is a mechanism for Defold game objects to communicate with each other.
   - Learn about [application lifecycle](https://defold.com/manuals/application-lifecycle/).
 - **Explore the Defold Manual:**
   - skim over the Defold [manuals](https://defold.com/manuals/introduction/) to get a better understanding of the engine and its features.
