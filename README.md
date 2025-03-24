@@ -1,8 +1,13 @@
+> [!IMPORTANT]
+> I no longer use Defold, feel free to fork or just copy & paste or whatever, it's just too advanced for me as a hobbyist, Bye .
+ 
+
 ## Welcome to Defold
 
 If you're new to programming and game development, I recommend starting with the official Defold [tutorials](https://defold.com/tutorials/) after at least finishing reading the four core concepts of Defold. These tutorials will give you a sense of self-development and help you get started with the basics, at least that's what I felt.
 
-> note: it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
+> [!NOTE]
+> it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
 
 Here's a roadmap for learning Defold, made for beginners:
 
