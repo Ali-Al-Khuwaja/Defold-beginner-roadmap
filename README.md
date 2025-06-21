@@ -1,5 +1,4 @@
-> [!IMPORTANT]
-> I no longer use Defold, feel free to fork or just copy & paste or whatever, it's just too advanced for me as a hobbyist, Bye .
+
  
 
 ## Welcome to Defold
