@@ -1,12 +1,16 @@
-
+> [!NOTE]
+> You do not need to understand everything at once. This roadmap is meant to be revisited multiple times as you learn.
+>
+>it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
  
-
+Roadmap v1.1
 ## Welcome to Defold
 
-If you're new to programming and game development, I recommend starting with the official Defold [tutorials](https://defold.com/tutorials/) after at least finishing reading the four core concepts of Defold. These tutorials will give you a sense of self-development and help you get started with the basics, at least that's what I felt.
 
-> [!NOTE]
-> it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
+>[!TIP]
+>If you're new to programming and game development, I recommend starting with the official Defold [tutorials](https://defold.com/tutorials/) only after at least finishing reading the four [core concepts](https://defold.com/manuals/building-blocks/) of Defold. These tutorials will give you a sense of self-development and help you get started with the basics, at least that's what I felt.
+
+
 
 Here's a roadmap for learning Defold, made for beginners:
 
@@ -16,17 +20,19 @@ Here's a roadmap for learning Defold, made for beginners:
 - **Editor Basics:**
   - Familiarize yourself with the [editor interface](https://defold.com/manuals/editor/): project view, scene editor, properties panel, console, it's very minimal and easy to understand.
 - **Learn the four core concepts of Defold:**
+> For now, focus on what exists in Defold, don't try to master just yet.
   - Learn about [the building blocks of Defold](https://defold.com/manuals/building-blocks/), game objects, components and collections.
   - Learn about [Addressing](https://defold.com/manuals/addressing/), Code that controls a running game must be able to reach every object and component to manipulate what the player sees and hears, and Defold’s addressing mechanism makes this possible.
   - Learn about [message passing](https://defold.com/manuals/message-passing/), message passing is a mechanism for Defold game objects to communicate with each other.
   - Learn about [application lifecycle](https://defold.com/manuals/application-lifecycle/).
+
 - **Explore the Defold Manual:**
   - skim over the Defold [manuals](https://defold.com/manuals/introduction/) to get a better understanding of the engine and its features.
 
 **Phase 2: Scripting and Game Logic**
 
 - **Lua Scripting Basics:**
-  - Learn the [basics of Lua syntax](https://defold.com/manuals/lua/): variables, data types, operators, control flow (if statements, loops), functions, there you will be given all the resources you will ever need to learn Lua.
+  - Learn [enough Lua](https://defold.com/manuals/lua/) to read and slightly modify Defold scripts (not to master Lua): variables, data types, operators, control flow (if statements, loops), functions, there you will be given all the resources you will ever need to learn Lua.
   - Understand how to attach [scripts](https://defold.com/manuals/script/) to game objects and use the `init()`, `update()`, and `on_message()` functions.
 - **Basic Game Mechanics:**
   - Implement movement using [keyboard](https://defold.com/manuals/input-key-and-text/) or [mouse input](https://defold.com/manuals/input-mouse-and-touch/).
