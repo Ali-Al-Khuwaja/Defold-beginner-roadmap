@@ -5,7 +5,7 @@
 >
 >it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
  
-Roadmap v1.2
+Roadmap v1.3
 ## Welcome to Defold
 
 
@@ -15,6 +15,10 @@ Roadmap v1.2
 
 
 Here's a roadmap for learning Defold, made for beginners:
+
+> [!IMPORTANT]
+> While following this roadmap, your goal is not to write perfect code.
+> Your goal is to understand *why things work* and *why they break*.
 
 **Phase 1: Foundations**
 
@@ -30,6 +34,7 @@ Here's a roadmap for learning Defold, made for beginners:
 
 - **Explore the Defold Manual:**
   - skim over the Defold [manuals](https://defold.com/manuals/introduction/) to get a better understanding of the engine and its features.
+  - While reading, focus on recognizing names and ideas, not memorizing details.
 
 
 > You can move on from Phase 1 when:
@@ -54,6 +59,11 @@ Here's a roadmap for learning Defold, made for beginners:
 - **Example Projects:** Start with very simple game ideas:
   - "Hello World" with interactive elements (e.g., a button that changes color when clicked).
   - A simple "dodge the falling objects" game or just do a tutorial like snake.
+  > When following a tutorial:
+  > - Pause and predict what the code will do before running it
+  > - Change small things (values, names, speeds) to see what breaks
+  > - If something breaks, that’s progress
+
 
 **Phase 3: Intermediate Concepts**
 
@@ -98,6 +108,28 @@ Here's a roadmap for learning Defold, made for beginners:
 - **Don't be afraid to ask for help:** [The community forum](https://forum.defold.com/) is very helpful and welcoming to beginners, also check the discord server.
 - **Official examples:** Work through the [examples](https://defold.com/examples/), These are a great starting point and cover the basics effectively.
 
+
+> [!NOTE]
 > This roadmap is not a checklist.
 > It’s a map you return to as your understanding grows.
+>
+> You are learning correctly if:
+> - You feel confused but curious
+> - You often say “oh, that’s why”
+> - You break things by experimenting
+> - You don’t remember everything, but recognize it later
+>
 > It's okay to use AI for explaining concepts
+
+This Roadmap is being cooked on calm fire, by me and ChatGPT in a controlled, gradual way.
+I will keep improving weak points every now and then, every line here is been discussed with psychological effect in mind.
+
+A Roadmap is important for the confused newcomers like myself, I aim to :
+- Reduce pressure on the learning journey 
+- Clarify when to move on
+- Normalize confusion
+- Add enough direction
+
+This is possible thanks to the defold manual and ChatGPT, I'm myself, also a confused newcomer who haven’t found a roadmap, that's why I decided to make it myself with the help of the internet🙂. 
+
+
