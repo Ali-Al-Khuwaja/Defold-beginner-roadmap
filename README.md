@@ -1,9 +1,11 @@
 > [!NOTE]
 > You do not need to understand everything at once. This roadmap is meant to be revisited multiple times as you learn.
 >
+> If something doesn’t click yet, that’s expected. Skip it and come back later .
+>
 >it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
  
-Roadmap v1.1
+Roadmap v1.2
 ## Welcome to Defold
 
 
@@ -29,12 +31,24 @@ Here's a roadmap for learning Defold, made for beginners:
 - **Explore the Defold Manual:**
   - skim over the Defold [manuals](https://defold.com/manuals/introduction/) to get a better understanding of the engine and its features.
 
+
+> You can move on from Phase 1 when:
+> - You know what game objects, components, and collections are
+> - You understand that objects communicate using messages
+> - You don’t fully understand everything — and that’s okay 😉
+
 **Phase 2: Scripting and Game Logic**
 
 - **Lua Scripting Basics:**
   - Learn [enough Lua](https://defold.com/manuals/lua/) to read and slightly modify Defold scripts (not to master Lua): variables, data types, operators, control flow (if statements, loops), functions, there you will be given all the resources you will ever need to learn Lua.
+
+  > Beginner habit:
+  > - Use `print()` often to see what your code is doing
+  > - Errors are normal and expected
+  > - Reading error messages is part of learning
+
   - Understand how to attach [scripts](https://defold.com/manuals/script/) to game objects and use the `init()`, `update()`, and `on_message()` functions.
-- **Basic Game Mechanics:**
+- **Basic Game Mechanics (input → logic → result):**
   - Implement movement using [keyboard](https://defold.com/manuals/input-key-and-text/) or [mouse input](https://defold.com/manuals/input-mouse-and-touch/).
   - Create simple [collision detection](https://defold.com/examples/physics/dynamic/) between game objects.
 - **Example Projects:** Start with very simple game ideas:
@@ -52,13 +66,18 @@ Here's a roadmap for learning Defold, made for beginners:
 - **User Interface (UI):**
   - Learn how to create and manage [UI elements](https://defold.com/manuals/gui/) (buttons, text, images).
   - Implement basic UI interactions.
+
+  > Tip: UI (GUI scripts) should usually not control gameplay directly.
+
 - **Sound and Music:**
   - Learn how to [add sound effects](https://defold.com/manuals/sound/) and background music to your game.
 - **More Complex Projects:**
   - A simple platformer with basic movement, jumping, and collision, there is an example game already made if you need.
   - A top-down shooter with basic enemy AI.
 
+
 **Phase 4: Advanced Topics and Polish (Ongoing)**
+> You do not need this phase to make and publish simple games.
 
 - **Physics:** Dive deeper into the [physics](https://defold.com/manuals/physics/) engine for more realistic movement and interactions.
 - **Advanced Scripting:** Learn more advanced Lua techniques, such as object-oriented programming.
@@ -71,9 +90,14 @@ Here's a roadmap for learning Defold, made for beginners:
   - Explore community-created extensions and libraries.
   - Continue learning through tutorials, documentation, and example projects.
 
+
 **Tips:**
 
 - **Start small:** Don't try to create a complex game right away. Start with small, manageable projects and gradually increase the complexity.
 - **Focus on understanding the fundamentals:** Make sure you have a solid understanding of the basic concepts before moving on to more advanced topics.
-- **Don't be afraid to ask for help:** The community forum is very helpful and welcoming to beginners, also check the discord server.
+- **Don't be afraid to ask for help:** [The community forum](https://forum.defold.com/) is very helpful and welcoming to beginners, also check the discord server.
 - **Official examples:** Work through the [examples](https://defold.com/examples/), These are a great starting point and cover the basics effectively.
+
+> This roadmap is not a checklist.
+> It’s a map you return to as your understanding grows.
+> It's okay to use AI for explaining concepts
