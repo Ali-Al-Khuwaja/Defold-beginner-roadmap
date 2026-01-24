@@ -5,7 +5,7 @@
 >
 >it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .
  
-Roadmap v1.3
+Roadmap v1.4
 ## Welcome to Defold
 
 
