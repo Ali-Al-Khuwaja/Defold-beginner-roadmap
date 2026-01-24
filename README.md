@@ -20,6 +20,8 @@ Here's a roadmap for learning Defold, made for beginners:
 > While following this roadmap, your goal is not to write perfect code.
 > Your goal is to understand *why things work* and *why they break*.
 
+---
+
 **Phase 1: Foundations**
 
 - **Install Defold:** Download and install the Defold editor from the official website [here](https://defold.com/download/).
@@ -41,6 +43,8 @@ Here's a roadmap for learning Defold, made for beginners:
 > - You know what game objects, components, and collections are
 > - You understand that objects communicate using messages
 > - You don’t fully understand everything — and that’s okay 😉
+
+---
 
 **Phase 2: Scripting and Game Logic**
 
@@ -64,6 +68,31 @@ Here's a roadmap for learning Defold, made for beginners:
   > - Change small things (values, names, speeds) to see what breaks
   > - If something breaks, that’s progress
 
+---
+
+## Common Beginner Traps (Read when you feel stuck)
+
+- **“I must understand everything before moving on”**
+  - You don’t. Recognition comes before understanding.
+
+- **“My code is messy, so I’m doing it wrong”**
+  - Messy code is normal at this stage. Clarity comes later.
+
+- **“This tutorial makes sense, but I can’t do it alone”**
+  - That’s expected. Tutorials teach exposure, not mastery.
+
+- **“I should restart from zero”**
+  - Only restart if you know *why*. Otherwise, continue.
+
+- **“Everyone else gets this faster than me”**
+  - You’re only seeing results, not confusion.
+
+> If you’re stuck for more than 30–60 minutes:
+> - Take a short break
+> - Ask a specific question
+> - Or move on and come back later
+
+--- 
 
 **Phase 3: Intermediate Concepts**
 
@@ -85,6 +114,7 @@ Here's a roadmap for learning Defold, made for beginners:
   - A simple platformer with basic movement, jumping, and collision, there is an example game already made if you need.
   - A top-down shooter with basic enemy AI.
 
+--- 
 
 **Phase 4: Advanced Topics and Polish (Ongoing)**
 > You do not need this phase to make and publish simple games.
@@ -99,6 +129,8 @@ Here's a roadmap for learning Defold, made for beginners:
   - Engage with the Defold community on the forum and Discord.
   - Explore community-created extensions and libraries.
   - Continue learning through tutorials, documentation, and example projects.
+
+---
 
 
 **Tips:**
