@@ -1,179 +1,274 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>A road-map for learning Defold</title>
+  <title>A roadmap for learning Defold</title>
   <link rel="stylesheet" href="css/markdown.css">
   <meta charset="utf-8">
   <style>
     :root {
       --text-colour: #504e55;
+      --figcaption-opacity: 0.85;
     }
-
     @media screen {
-      body {
+      html {
         font-size: 13pt;
+      }
+      body {
         max-width: 800px;
-        font-family: "Ubuntu", Sans, sans-serif;
+        font-family: Sans, sans-serif;
         padding-top: 1px;
       }
     }
-
+    @media screen and (max-width:600px) {
+      body {
+        padding-top: 0;
+      }
+    }
     @media (prefers-color-scheme: dark) {
       :root {
         --text-colour: #c0bfbc;
       }
     }
   </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
 </head>
-
 <body>
-  <h2>Welcome to Defold</h2>
-  <p>If you're new to programming and game development, I recommend starting with the official Defold <a
-      href="https://defold.com/tutorials/">tutorials</a> after at least finishing reading the four core concepts of
-    Defold. These tutorials will give you a sense of self-development and help you get started with the basics, at least
-    that's what I felt.</p>
-  <blockquote>
-    <p>note: it's important that you realize the existence of these resources while doing the tutorials so you know
-      where you should search .</p>
-  </blockquote>
-  <p>Here's a roadmap for learning Defold, made for beginners:</p>
-  <p><strong>Phase 1: Foundations</strong></p>
-  <ul>
-    <li><strong>Install Defold:</strong> Download and install the Defold editor from the official website <a
-        href="https://defold.com/download/">here</a>.</li>
-    <li><strong>Editor Basics:</strong>
-      <ul>
-        <li>Familiarize yourself with the <a href="https://defold.com/manuals/editor/">editor interface</a>: project
-          view, scene editor, properties panel, console, it's very minimal and easy to understand.</li>
-      </ul>
-    </li>
-    <li><strong>Learn the four core concepts of Defold:</strong>
-      <ul>
-        <li>Learn about <a href="https://defold.com/manuals/building-blocks/">the building blocks of Defold</a>, game
-          objects, components and collections.</li>
-        <li>Learn about <a href="https://defold.com/manuals/addressing/">Addressing</a>, Code that controls a running
-          game must be able to reach every object and component to manipulate what the player sees and hears, and
-          Defold’s addressing mechanism makes this possible.</li>
-        <li>Learn about <a href="https://defold.com/manuals/message-passing/">message passing</a>, message passing is a
-          mechanism for Defold game objects to communicate with each
-          other.</li>
-        <li>Learn about <a href="https://defold.com/manuals/application-lifecycle/">application lifecycle</a>.</li>
-      </ul>
-    </li>
-    <li><strong>Explore the Defold Manual:</strong>
-      <ul>
-        <li>skim over the Defold <a href="https://defold.com/manuals/introduction/">manuals</a> to get a better
-          understanding of the engine and its features.</li>
-      </ul>
-    </li>
-  </ul>
-  <p><strong>Phase 2: Scripting and Game Logic</strong></p>
-  <ul>
-    <li><strong>Lua Scripting Basics:</strong>
-      <ul>
-        <li>Learn the <a href="https://defold.com/manuals/lua/">basics of Lua syntax</a>: variables, data types,
-          operators, control flow (if statements, loops), functions, there you will be given all the resources you will
-          ever need to learn Lua.</li>
-        <li>Understand how to attach <a href="https://defold.com/manuals/script/">scripts</a> to game objects and use
-          the <code>init()</code>, <code>update()</code>, and <code>on_message()</code> functions.</li>
-      </ul>
-    </li>
-    <li><strong>Basic Game Mechanics:</strong>
-      <ul>
-        <li>Implement movement using <a href="https://defold.com/manuals/input-key-and-text/">keyboard</a> or <a
-            href="https://defold.com/manuals/input-mouse-and-touch/">mouse input</a>.</li>
-        <li>Create simple <a href="https://defold.com/examples/physics/dynamic/">collision detection</a> between game
-          objects.</li>
-      </ul>
-    </li>
-    <li><strong>Example Projects:</strong> Start with very simple game ideas:
-      <ul>
-        <li>&quot;Hello World&quot; with interactive elements (e.g., a button that changes color when clicked).</li>
-        <li>A simple &quot;dodge the falling objects&quot; game or just do a tutorial like snake.</li>
-      </ul>
-    </li>
-  </ul>
-  <p><strong>Phase 3: Intermediate Concepts</strong></p>
-  <ul>
-    <li><strong>Collections and Factories:</strong>
-      <ul>
-        <li>Learn how to use collections to organize your game objects.</li>
-        <li>Understand how to use <a href="https://defold.com/manuals/collection-factory/">factories</a> to create
-          instances of game objects at runtime.</li>
-      </ul>
-    </li>
-    <li><strong>Animation:</strong>
-      <ul>
-        <li>Learn how to create and use sprite <a href="https://defold.com/manuals/animation/">animations</a>.</li>
-        <li>Implement animation based on game events (e.g., walking animation when moving).</li>
-      </ul>
-    </li>
-    <li><strong>User Interface (UI):</strong>
-      <ul>
-        <li>Learn how to create and manage <a href="https://defold.com/manuals/gui/">UI elements</a> (buttons, text,
-          images).</li>
-        <li>Implement basic UI interactions.</li>
-      </ul>
-    </li>
-    <li><strong>Sound and Music:</strong>
-      <ul>
-        <li>Learn how to <a href="https://defold.com/manuals/sound/">add sound effects</a> and background music to your
-          game.</li>
-      </ul>
-    </li>
-    <li><strong>More Complex Projects:</strong>
-      <ul>
-        <li>A simple platformer with basic movement, jumping, and collision, there is an example game already made if
-          you need.</li>
-        <li>A top-down shooter with basic enemy AI.</li>
-      </ul>
-    </li>
-  </ul>
-  <p><strong>Phase 4: Advanced Topics and Polish (Ongoing)</strong></p>
-  <ul>
-    <li><strong>Physics:</strong> Dive deeper into the <a href="https://defold.com/manuals/physics/">physics</a> engine
-      for more realistic movement and interactions.</li>
-    <li><strong>Advanced Scripting:</strong> Learn more advanced Lua techniques, such as object-oriented programming.
-    </li>
-    <li><strong>Shaders:</strong> <a href="https://defold.com/manuals/shader/">Explore shaders</a> to create visual
-      effects.</li>
-    <li><strong>Networking:</strong> If you're interested in multiplayer games, learn <a
-        href="https://defold.com/manuals/networking/">about networking </a>concepts and Defold's networking
-      capabilities.</li>
-    <li><strong>Optimization:</strong> Learn how to <a href="https://defold.com/manuals/optimization/">optimize your
-        game</a> for performance.</li>
-    <li><strong>Publishing:</strong> Learn how to build and publish your game to different platforms, it's all in the
-      manual.</li>
-    <li><strong>Community and Resources:</strong>
-      <ul>
-        <li>Engage with the Defold community on the forum and Discord.</li>
-        <li>Explore community-created extensions and libraries.</li>
-        <li>Continue learning through tutorials, documentation, and example projects.</li>
-      </ul>
-    </li>
-  </ul>
-  <p><strong>Tips:</strong></p>
-  <ul>
-    <li><strong>Start small:</strong> Don't try to create a complex game right away. Start with small, manageable
-      projects and gradually increase the complexity.</li>
-    <li><strong>Focus on understanding the fundamentals:</strong> Make sure you have a solid understanding of the basic
-      concepts before moving on to more advanced topics.</li>
-    <li><strong>Don't be afraid to ask for help:</strong> The community forum is very helpful and welcoming to
-      beginners, also check the discord server.</li>
-    <li><strong>Official examples:</strong> Work through the <a href="https://defold.com/examples/">examples</a>, These
-      are a great starting point and cover the basics effectively.</li>
-  </ul>
-  <script src="https://giscus.app/client.js" data-repo="Ali-Al-Khuwaja/Defold-beginner-roadmap"
-    data-repo-id="R_kgDONvFxqw" data-category="Ideas" data-category-id="DIC_kwDONvFxq84Cm8Wo" data-mapping="pathname"
-    data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
-    data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
-    </script>
+<blockquote data-map="0">
+<p data-map="0">[!NOTE]
+You do not need to understand everything at once. This roadmap is meant to be revisited multiple times as you learn.</p>
+<p data-map="3">If something doesn’t click yet, that’s expected. Skip it and come back later .</p>
+<p data-map="5">it's important that you realize the existence of these resources while doing the tutorials so you know where you should search .</p>
+</blockquote>
+<p data-map="7">Roadmap v1.4</p>
+<h2 data-map="8">Welcome to Defold</h2>
+<blockquote data-map="11">
+<p data-map="11">[!TIP]
+If you're new to programming and game development, I recommend starting with the official Defold <a href="https://defold.com/tutorials/">tutorials</a> only after at least finishing reading the four <a href="https://defold.com/manuals/building-blocks/">core concepts</a> of Defold. These tutorials will give you a sense of self-development and help you get started with the basics, at least that's what I felt.</p>
+</blockquote>
+<p data-map="16">Here's a roadmap for learning Defold, made for beginners:</p>
+<blockquote data-map="18">
+<p data-map="18">[!IMPORTANT]
+While following this roadmap, your goal is not to write perfect code.
+Your goal is to understand <em>why things work</em> and <em>why they break</em>.</p>
+</blockquote>
+<hr data-map="22" />
+<p data-map="24"><strong>Phase 1: Foundations</strong></p>
+<ul data-map="26">
+<li data-map="26"><strong>Install Defold:</strong> Download and install the Defold editor from the official website <a href="https://defold.com/download/">here</a>.</li>
+<li data-map="27"><strong>Editor Basics:</strong>
+<ul data-map="28">
+<li data-map="28">Familiarize yourself with the <a href="https://defold.com/manuals/editor/">editor interface</a>: project view, scene editor, properties panel, console, it's very minimal and easy to understand.</li>
+</ul>
+</li>
+<li data-map="29"><strong>Learn the four core concepts of Defold:</strong></li>
+</ul>
+<blockquote data-map="30">
+<p data-map="30">For now, focus on what exists in Defold, don't try to master just yet.</p>
+</blockquote>
+<ul data-map="31">
+<li data-map="31">
+<p data-map="31">Learn about <a href="https://defold.com/manuals/building-blocks/">the building blocks of Defold</a>, game objects, components and collections.</p>
+</li>
+<li data-map="32">
+<p data-map="32">Learn about <a href="https://defold.com/manuals/addressing/">Addressing</a>, Code that controls a running game must be able to reach every object and component to manipulate what the player sees and hears, and Defold’s addressing mechanism makes this possible.</p>
+</li>
+<li data-map="33">
+<p data-map="33">Learn about <a href="https://defold.com/manuals/message-passing/">message passing</a>, message passing is a mechanism for Defold game objects to communicate with each other.</p>
+</li>
+<li data-map="34">
+<p data-map="34">Learn about <a href="https://defold.com/manuals/application-lifecycle/">application lifecycle</a>.</p>
+</li>
+<li data-map="36">
+<p data-map="36"><strong>Explore the Defold Manual:</strong></p>
+<ul data-map="37">
+<li data-map="37">skim over the Defold <a href="https://defold.com/manuals/introduction/">manuals</a> to get a better understanding of the engine and its features.</li>
+<li data-map="38">While reading, focus on recognizing names and ideas, not memorizing details.</li>
+</ul>
+</li>
+</ul>
+<blockquote data-map="41">
+<p data-map="41">You can move on from Phase 1 when:</p>
+<ul data-map="42">
+<li data-map="42">You know what game objects, components, and collections are</li>
+<li data-map="43">You understand that objects communicate using messages</li>
+<li data-map="44">You don’t fully understand everything — and that’s okay 😉</li>
+</ul>
+</blockquote>
+<hr data-map="46" />
+<p data-map="48"><strong>Phase 2: Scripting and Game Logic</strong></p>
+<ul data-map="50">
+<li data-map="50">
+<p data-map="50"><strong>Lua Scripting Basics:</strong></p>
+<ul data-map="51">
+<li data-map="51">Learn <a href="https://defold.com/manuals/lua/">enough Lua</a> to read and slightly modify Defold scripts (not to master Lua): variables, data types, operators, control flow (if statements, loops), functions, there you will be given all the resources you will ever need to learn Lua.</li>
+</ul>
+<blockquote data-map="53">
+<p data-map="53">Beginner habit:</p>
+<ul data-map="54">
+<li data-map="54">Use <code>print()</code> often to see what your code is doing</li>
+<li data-map="55">Errors are normal and expected</li>
+<li data-map="56">Reading error messages is part of learning</li>
+</ul>
+</blockquote>
+<ul data-map="58">
+<li data-map="58">Understand how to attach <a href="https://defold.com/manuals/script/">scripts</a> to game objects and use the <code>init()</code>, <code>update()</code>, and <code>on_message()</code> functions.</li>
+</ul>
+</li>
+<li data-map="59">
+<p data-map="59"><strong>Basic Game Mechanics (input → logic → result):</strong></p>
+<ul data-map="60">
+<li data-map="60">Implement movement using <a href="https://defold.com/manuals/input-key-and-text/">keyboard</a> or <a href="https://defold.com/manuals/input-mouse-and-touch/">mouse input</a>.</li>
+<li data-map="61">Create simple <a href="https://defold.com/examples/physics/dynamic/">collision detection</a> between game objects.</li>
+</ul>
+</li>
+<li data-map="62">
+<p data-map="62"><strong>Example Projects:</strong> Start with very simple game ideas:</p>
+<ul data-map="63">
+<li data-map="63">&quot;Hello World&quot; with interactive elements (e.g., a button that changes color when clicked).</li>
+<li data-map="64">A simple &quot;dodge the falling objects&quot; game or just do a tutorial like snake.</li>
+</ul>
+<blockquote data-map="65">
+<p data-map="65">When following a tutorial:</p>
+<ul data-map="66">
+<li data-map="66">Pause and predict what the code will do before running it</li>
+<li data-map="67">Change small things (values, names, speeds) to see what breaks</li>
+<li data-map="68">If something breaks, that’s progress</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr data-map="70" />
+<h2 data-map="72">Common Beginner Traps (Read when you feel stuck)</h2>
+<ul data-map="74">
+<li data-map="74">
+<p data-map="74"><strong>“I must understand everything before moving on”</strong></p>
+<ul data-map="75">
+<li data-map="75">You don’t. Recognition comes before understanding.</li>
+</ul>
+</li>
+<li data-map="77">
+<p data-map="77"><strong>“My code is messy, so I’m doing it wrong”</strong></p>
+<ul data-map="78">
+<li data-map="78">Messy code is normal at this stage. Clarity comes later.</li>
+</ul>
+</li>
+<li data-map="80">
+<p data-map="80"><strong>“This tutorial makes sense, but I can’t do it alone”</strong></p>
+<ul data-map="81">
+<li data-map="81">That’s expected. Tutorials teach exposure, not mastery.</li>
+</ul>
+</li>
+<li data-map="83">
+<p data-map="83"><strong>“I should restart from zero”</strong></p>
+<ul data-map="84">
+<li data-map="84">Only restart if you know <em>why</em>. Otherwise, continue.</li>
+</ul>
+</li>
+<li data-map="86">
+<p data-map="86"><strong>“Everyone else gets this faster than me”</strong></p>
+<ul data-map="87">
+<li data-map="87">You’re only seeing results, not confusion.</li>
+</ul>
+</li>
+</ul>
+<blockquote data-map="89">
+<p data-map="89">If you’re stuck for more than 30–60 minutes:</p>
+<ul data-map="90">
+<li data-map="90">Take a short break</li>
+<li data-map="91">Ask a specific question</li>
+<li data-map="92">Or move on and come back later</li>
+</ul>
+</blockquote>
+<hr data-map="94" />
+<p data-map="96"><strong>Phase 3: Intermediate Concepts</strong></p>
+<ul data-map="98">
+<li data-map="98">
+<p data-map="98"><strong>Collections and Factories:</strong></p>
+<ul data-map="99">
+<li data-map="99">Learn how to use collections to organize your game objects.</li>
+<li data-map="100">Understand how to use <a href="https://defold.com/manuals/collection-factory/">factories</a> to create instances of game objects at runtime.</li>
+</ul>
+</li>
+<li data-map="101">
+<p data-map="101"><strong>Animation:</strong></p>
+<ul data-map="102">
+<li data-map="102">Learn how to create and use sprite <a href="https://defold.com/manuals/animation/">animations</a>.</li>
+<li data-map="103">Implement animation based on game events (e.g., walking animation when moving).</li>
+</ul>
+</li>
+<li data-map="104">
+<p data-map="104"><strong>User Interface (UI):</strong></p>
+<ul data-map="105">
+<li data-map="105">Learn how to create and manage <a href="https://defold.com/manuals/gui/">UI elements</a> (buttons, text, images).</li>
+<li data-map="106">Implement basic UI interactions.</li>
+</ul>
+<blockquote data-map="108">
+<p data-map="108">Tip: UI (GUI scripts) should usually not control gameplay directly.</p>
+</blockquote>
+</li>
+<li data-map="110">
+<p data-map="110"><strong>Sound and Music:</strong></p>
+<ul data-map="111">
+<li data-map="111">Learn how to <a href="https://defold.com/manuals/sound/">add sound effects</a> and background music to your game.</li>
+</ul>
+</li>
+<li data-map="112">
+<p data-map="112"><strong>More Complex Projects:</strong></p>
+<ul data-map="113">
+<li data-map="113">A simple platformer with basic movement, jumping, and collision, there is an example game already made if you need.</li>
+<li data-map="114">A top-down shooter with basic enemy AI.</li>
+</ul>
+</li>
+</ul>
+<hr data-map="116" />
+<p data-map="118"><strong>Phase 4: Advanced Topics and Polish (Ongoing)</strong></p>
+<blockquote data-map="119">
+<p data-map="119">You do not need this phase to make and publish simple games.</p>
+</blockquote>
+<ul data-map="121">
+<li data-map="121"><strong>Physics:</strong> Dive deeper into the <a href="https://defold.com/manuals/physics/">physics</a> engine for more realistic movement and interactions.</li>
+<li data-map="122"><strong>Advanced Scripting:</strong> Learn more advanced Lua techniques, such as object-oriented programming.</li>
+<li data-map="123"><strong>Shaders:</strong> <a href="https://defold.com/manuals/shader/">Explore shaders</a> to create visual effects.</li>
+<li data-map="124"><strong>Networking:</strong> If you're interested in multiplayer games, learn <a href="https://defold.com/manuals/networking/">about networking </a>concepts and Defold's networking capabilities.</li>
+<li data-map="125"><strong>Optimization:</strong> Learn how to <a href="https://defold.com/manuals/optimization/">optimize your game</a> for performance.</li>
+<li data-map="126"><strong>Publishing:</strong> Learn how to build and publish your game to different platforms, it's all in the manual.</li>
+<li data-map="127"><strong>Community and Resources:</strong>
+<ul data-map="128">
+<li data-map="128">Engage with the Defold community on the forum and Discord.</li>
+<li data-map="129">Explore community-created extensions and libraries.</li>
+<li data-map="130">Continue learning through tutorials, documentation, and example projects.</li>
+</ul>
+</li>
+</ul>
+<hr data-map="132" />
+<p data-map="135"><strong>Tips:</strong></p>
+<ul data-map="137">
+<li data-map="137"><strong>Start small:</strong> Don't try to create a complex game right away. Start with small, manageable projects and gradually increase the complexity.</li>
+<li data-map="138"><strong>Focus on understanding the fundamentals:</strong> Make sure you have a solid understanding of the basic concepts before moving on to more advanced topics.</li>
+<li data-map="139"><strong>Don't be afraid to ask for help:</strong> <a href="https://forum.defold.com/">The community forum</a> is very helpful and welcoming to beginners, also check the discord server.</li>
+<li data-map="140"><strong>Official examples:</strong> Work through the <a href="https://defold.com/examples/">examples</a>, These are a great starting point and cover the basics effectively.</li>
+</ul>
+<blockquote data-map="143">
+<p data-map="143">[!NOTE]
+This roadmap is not a checklist.
+It’s a map you return to as your understanding grows.</p>
+<p data-map="147">You are learning correctly if:</p>
+<ul data-map="148">
+<li data-map="148">You feel confused but curious</li>
+<li data-map="149">You often say “oh, that’s why”</li>
+<li data-map="150">You break things by experimenting</li>
+<li data-map="151">You don’t remember everything, but recognize it later</li>
+</ul>
+<p data-map="153">It's okay to use AI for explaining concepts</p>
+</blockquote>
+<p data-map="155">This Roadmap is being cooked on calm fire, by me and ChatGPT in a controlled, gradual way.
+I will keep improving weak points every now and then, every line here is been discussed with psychological effect in mind.</p>
+<p data-map="158">A Roadmap is important for the confused newcomers like myself, I aim to :</p>
+<ul data-map="159">
+<li data-map="159">Reduce pressure on the learning journey</li>
+<li data-map="160">Clarify when to move on</li>
+<li data-map="161">Normalize confusion</li>
+<li data-map="162">Add enough direction</li>
+</ul>
+<p data-map="164">This is possible thanks to the defold manual and ChatGPT, I'm myself, also a confused newcomer who haven’t found a roadmap, that's why I decided to make it myself with the help of the internet🙂.</p>
 </body>
-
 </html>
