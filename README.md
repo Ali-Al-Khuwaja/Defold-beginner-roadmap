@@ -1,24 +1,5 @@
-# New Changes: Build First, Understand Later. V 1.4.1
 
-What's new?
-1. Road-map freeze .
-2. Build First, Understand Later.
-
-I noticed that the road-map is boring and felt more like work than a hobby, I just couldn't continue studying it.
-Maybe I was too reliant on AI helping me form a road-map, So I decided to stop it there and start adding the human part in.
-I want to refactor it to a Road-map that goes like **"I want to do X then ask how to do X and how it works"** instead of **"Here learn X Y Z  because you will need it in the feature"**
-
-What I'm saying is that the "New Changes" will be project oriented first and theory second, I don't really have experience in creating such projects so I will use AI to help me, it will also take a lot of time to make 🙂.
-
-Final note:
-I think any new AI model can generate such road-map in seconds, maybe not in one prompt but it can surly achieve something similar of what I had cooking .
-
-Freezing the current map is the only choice available, I'm building the Road-map and applying it at the same tame, it will not be a smooth ride.
-
----
-
- 
-Roadmap v1.4.1
+Roadmap v1.4
 ## Welcome to Defold
 
 
